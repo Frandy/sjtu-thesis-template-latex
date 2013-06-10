@@ -9,11 +9,11 @@
 % 双面打印（注意字号设置）
 %\documentclass[cs4size, a4paper, twoside]{sjtuthesis} 
 % 单面打印（注意字号设置）
-\documentclass[cs4size, a4paper, oneside, openany]{sjtuthesis} 
+\documentclass[cs4size, a4paer, oneside, openany]{sjtuthesis} 
 
 
 % \usepackage[sectionbib]{chapterbib}%每章都用参考文献
-
+\usepackage{setspace}
 \newboolean{DOIT}
 \setboolean{DOIT}{false}%编译某些只想自己看的内容，编译true，否则false
 
@@ -49,13 +49,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % 中文封面内容(关注内容而不是形式)
-\title{上海交通大学学士学位论文~\XeTeX/\LaTeX~模板~\version}
+\title{上海交通大学学士学位论文~\XeTeX/\LaTeX~模板~}
 \author{李\quad{}四}
 \advisor{张三教授}
 \degree{学士}
 \defenddate{2010年1月16日}
 \school{上海交通大学}
-%\institute{物理系}
+\institute{理学院物理系}
 \studentnumber{0010900990}
 \major{物理系}
 
@@ -148,9 +148,12 @@
 \include{body/ack}
 
 % 发表文章目录
-\include{body/pub}
+%\include{body/pub}
 
 % 参与项目列表
-\include{body/projects}
+%\include{body/projects}
+
+%英文大摘要
+\include{body/bigabstract}
 
 \end{document}
